@@ -42,7 +42,8 @@
             });
 
             services.AddTransient<SeedDb>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+
+            services.AddScoped<IProductRepository, IProductRepository>();
             services.AddScoped<ICountryRepository, CountryRepository>();
             services.AddScoped<IUserHelper, UserHelper>();
 
@@ -52,6 +53,7 @@
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

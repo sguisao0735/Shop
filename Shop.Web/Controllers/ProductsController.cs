@@ -91,7 +91,7 @@
                 try
                 {
                     // TODO: Pending to change to: this.User.Identity.Name
-                    product.User = await this.userHelper.GetUserByEmailAsync("jzuluaga55@gmail.com");
+                    product.User = await this.userHelper.GetUserByEmailAsync("joan.guisao@gmail.com");
                     await this.productRepository.UpdateAsync(product);
                 }
                 catch (DbUpdateConcurrencyException)

@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace Shop.Web.Data.Entities
+﻿namespace Shop.Web.Data.Entities
 {
+    using Microsoft.AspNetCore.Identity;
+
     public class User : IdentityUser 
     {
         public string FirstName { get; set; }
