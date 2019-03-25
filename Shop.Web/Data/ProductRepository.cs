@@ -2,9 +2,9 @@
 {
     using Entities;
 
-    public class IProductRepository : GenericRepository<Product>, IProductRepository
+    public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-        public IProductRepository(DataContext context) : base(context)
+        public ProductRepository(DataContext context) : base(context)
         {
         }
     }
